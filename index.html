@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Form Validation</title>
+</head>
+
+<style>
+    form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+small {
+  color : red;
+}
+form input, form textarea, form button {
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+button {
+  cursor: pointer;
+}
+</style>
+<body>
+    <div class="res">
+        <form action =""  name = "post">
+        <input   type= "text" name="title" placeholder="title.."/>
+          <small id ='sm-title'></small>
+
+          <textarea for="body" name="body" rows="4" cols="50" placeholder="body.."></textarea>
+        
+          <small id ='sm-body'></small>
+           <button type="submit">Submit</button> 
+          </form>
+
+
+          <h1 id="title"></h1>
+          <p id="body"></b>
+      </div>
+      
+
+<script src="learn.js"></script>
+</body>
+</html>
